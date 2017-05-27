@@ -1,0 +1,48 @@
+.contimg{
+	width: 30%;
+	height: 10%;
+	margin: 1.5%;
+	padding: 0px;
+	float: left;
+	position: relative;
+}
+
+.contimg img {
+
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	
+}
+
+.hoverimg{
+	position: absolute;
+	top: 0px;
+	bottom:4px;
+	left: 0px;
+	right: 0px;
+	color: white;
+	padding: 4px;
+	opacity: 0;
+}
+
+.hoverimg div {
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 60%;
+	bottom:0px;
+	left: 0px;
+	right: 0px;
+}
+
+.hoverimg:hover{
+	opacity: 1;
+}
+
+h2{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+}
