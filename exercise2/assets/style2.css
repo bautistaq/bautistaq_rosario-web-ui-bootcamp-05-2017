@@ -1,3 +1,6 @@
+
+
+
 .contimg{
 	width: 30%;
 	height: 10%;
@@ -46,3 +49,29 @@ h2{
 h1{
 	text-align: center;
 }
+
+@media screen and (max-width: 480px){
+
+	.contimg{
+		width: 98%;
+		margin: 1%;
+	} 
+
+.hoverimg div {
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0px;
+	bottom:0px;
+	left: 0px;
+	right: 0px;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px){
+
+	.contimg{
+		width: 48%;
+		margin: 1%;
+	}
+}
+
