@@ -19,6 +19,10 @@ font-size: 10px;
 	font-size:10px; 
 }
 
-header.header, footer.footer {
+*[class$=r] {
 	background-color: magenta;
 }
+
+/* *[class*=a]:not*[class$=r]{
+	background-color: blue;
+} */
