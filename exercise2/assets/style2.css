@@ -11,7 +11,7 @@
 .contimg img {
 	width: 100%;
 	height: auto;
-	margin: 0px;
+	margin: 0;
 	
 }
 
@@ -30,9 +30,9 @@
 	background-color: rgba(0,0,0,0.4);
 	position: absolute;
 	top: 60%;
-	bottom:0px;
-	left: 0px;
-	right: 0px;
+	bottom:0;
+	left: 0;
+	right: 0;
 }
 
 .hoverimg:hover{
@@ -40,28 +40,28 @@
 }
 
 h2{
-	margin: 0px;
+	margin: 0;
 }
 
 h1{
 	text-align: center;
 }
 
-.entera{
+.col-full{
 	width: 100%;
 
 }
-.mitad{
+.col-half{
 	width: 50%;
 	float: left;
 
 }
-.tercio{
+.col-third{
 	width: 33.33%;
 	float: left;
 
 }
-.cuarto{
+.col-fourth{
 	width: 25%;
 	float: left;
 
@@ -69,7 +69,7 @@ h1{
 
 @media screen and (max-width: 480px){
 
-	.entera, .mitad, .tercio, .cuarto{
+	.col-full, .col-half, .col-third, .col-fourth{
 		width: 98%;
 		margin: 5px;
 	} 
@@ -77,18 +77,18 @@ h1{
 .hoverimg div {
 	background-color: rgba(0,0,0,0.4);
 	position: absolute;
-	top: 0px;
-	bottom:0px;
-	left: 0px;
-	right: 0px;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
 }
 }
 
 @media screen and (min-width: 480px) and (max-width: 980px){
 
-	.entera, .mitad, .tercio, .cuarto{
+	.col-full, .col-half, .col-third, .col-fourth{
 		width: 48%;
-		margin: 5px%;
+		margin: 5px;
 	} 
 }
 
