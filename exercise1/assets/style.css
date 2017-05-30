@@ -1,11 +1,14 @@
-.section1, .hide{
+.section1, .bottom{
 	text-align: center;
 }
 
-.hide {
-	color: #79C9DA;
-}
+#hide {
+	background-color: #D4F4FB;
+	color: #4890A0;
+	opacity: 0;
+	text-align:center;
 
+}
 
 .list{
 	list-style: none;

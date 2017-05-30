@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<title>Topic1</title>
+
+	<script>
+		
+		window.onload = function(){
+				
+			setTimeout(function(){ document.getElementById('hide').style.opacity = "1"; }, 3000)
+		}
+	</script>
 </head>
 <body>
 	
@@ -32,11 +40,16 @@
 		
 	</section>
 
-	<section class="hide">				
+	<section id="hide">				
 		<h1> Hello World </h1>
 	</section>
 
-	<
+	<div class="bottom">
+		<button id="bnt">Click me</button>
+	</div>
+	
+
+
 
 </body>
 </html>
