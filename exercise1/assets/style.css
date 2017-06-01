@@ -1,0 +1,31 @@
+.section1, .bottom{
+	text-align: center;
+}
+
+#hide {
+	background-color: #D4F4FB;
+	color: #4890A0;
+	opacity: 0;
+	text-align:center;
+}
+
+.list{
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+}
+
+.navside{
+	width: 20%;
+	height: 800px;
+	float: left;
+	padding-top: 30px;
+
+}
+.section1{
+	width: 80%;
+	height: 800px;
+	float: left;
+}
