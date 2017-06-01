@@ -53,3 +53,28 @@ function clickjoke(){
 	sendAjax(config);
 } 
 
+/* exersice 3*/
+
+function getResponse(){
+
+	var query = new XMLHttpRequest();
+	var url = "https://api.github.com/search/repositories?q="+ document.getElementById('serch').value;
+	query.open('GET', url , true)
+
+	query.onreadystatechange = function(){
+		if((query.readyState == 4) && (query.status == 200)){
+			var result = JSON.parse(query.responseText);
+				var ul = '<ul>';
+				
+				for (var i = 0; i < result.items.length; i++ ){
+					ul += '<li>'+ result.items[i].full_name;+'</li>';
+				}
+			ul += '</ul>';	
+			document.getElementById('response').innerHTML = ul;						
+		}
+	}
+
+	query.send();
+
+
+} 
