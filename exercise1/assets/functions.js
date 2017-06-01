@@ -12,6 +12,8 @@ window.onload = function(){
 
 } */
 
+
+/* exercise 2*/
 function sendAjax (config){
 	var url = config.url;
 	var method = config.type;
@@ -75,6 +77,32 @@ function getResponse(){
 	}
 
 	query.send();
-
-
 } 
+
+
+/* exersice 5*/
+var concert = [
+	['Country', 'Place', 'Date', 'Hour'],
+	['Germany', 'Gloria Theather', 'June 03' , '10 pm'],
+	['United Kindom', 'BCDO Festival', 'June 08', '3 pm'],
+	['Slovakia', 'Festival Lumen', 'June 20', '8 pm'],
+	['Hungary', 'A38 Boat', 'June 21', '5 pm']
+];
+
+function callTable(){
+	var tabla  = document.createElement('table')
+	for (let row of concert) {
+		
+		var tr = document.createElement('tr')
+		tabla.appendChild(tr);
+		for (let col of row){
+			
+			var td = document.createElement('td')
+
+			var hola = document.createTextNode(col)
+			td.appendChild(hola);
+			tr.appendChild(td);
+		}
+	}
+	document.getElementById('showTable').appendChild(tabla);
+}
